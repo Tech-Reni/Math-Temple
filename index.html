@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MathTemple — Don't Memorize Math, Understand It</title>
+    <meta name="description"
+        content="Help Nigerian SS1, SS2, and SS3 students master mathematics deeply through short, concept-first video lessons designed for WAEC & JAMB.">
+
+    <!-- Google Fonts: Outfit (For Headings) & Inter (For Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Remix Icons CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo" aria-label="MathTemple Home">
+                <svg class="logo-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 26V9.5C4 7 8 5 16 13C24 5 28 7 28 9.5V26H4Z" stroke="currentColor" stroke-width="3"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <span class="logo-text">Maths<span>Temple</span></span>
+            </a>
+
+            <nav class="nav-links" id="nav-menu" aria-label="Primary Navigation">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#curriculum" class="nav-link">Curriculum</a>
+                <a href="#why-mathstemple" class="nav-link">Why Us</a>
+                <a href="#stories" class="nav-link">Success Stories</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="#signin" class="btn btn-text">Sign In</a>
+                <a href="#start" class="btn btn-primary">Start Learning</a>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu" aria-expanded="false">
+                    <i class="ri-menu-line"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-drawer" id="mobile-drawer">
+        <div class="drawer-header">
+            <span class="logo-text">Maths<span>Temple</span></span>
+            <button class="close-toggle" id="close-toggle" aria-label="Close Menu">
+                <i class="ri-close-line"></i>
+            </button>
+        </div>
+        <div class="drawer-links">
+            <a href="#home" class="drawer-link">Home</a>
+            <a href="#curriculum" class="drawer-link">Curriculum</a>
+            <a href="#why-mathstemple" class="drawer-link">Why Us</a>
+            <a href="#stories" class="drawer-link">Success Stories</a>
+            <hr class="drawer-divider">
+            <a href="#signin" class="drawer-link">Sign In</a>
+            <a href="#start" class="btn btn-primary drawer-btn">Start Learning Free</a>
+        </div>
+    </div>
+
+    <main>
+        <!-- Section 1: Hero -->
+        <section class="hero-section" id="home">
+            <div class="hero-container">
+                <!-- Floating Math Elements -->
+                <span class="math-element math-1">x²</span>
+                <span class="math-element math-2">π</span>
+                <span class="math-element math-3">√</span>
+                <span class="math-element math-4">Σ</span>
+
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        You're Not Bad At Math. It Just Hasn't Been <span class="highlight">Explained Properly.</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        MathTemple helps Nigerian students understand mathematics deeply through short, visual lessons
+                        designed around concept comprehension, not stressful memorization.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#start" class="btn btn-primary btn-large">Start Learning Free</a>
+                        <a href="#sample" class="btn btn-secondary btn-large">
+                            <i class="ri-play-circle-line"></i> Watch Sample Lesson
+                        </a>
+                    </div>
+                    <div class="hero-trust">
+                        <div class="trust-item"><i class="ri-checkbox-circle-fill"></i> WAEC Aligned</div>
+                        <div class="trust-item"><i class="ri-checkbox-circle-fill"></i> JAMB Ready</div>
+                        <div class="trust-item"><i class="ri-checkbox-circle-fill"></i> SS1–SS3 Curriculum</div>
+                    </div>
+                </div>
+
+                <div class="hero-media">
+                    <div class="hero-image-wrapper">
+                        <img src="assets/img/happy.png"
+                            alt="Nigerian Secondary Student Studying" class="hero-student-img">
+                        <div class="accent-badge">
+                            <i class="ri-lightbulb-line"></i>
+                            <span>Concept First</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: The Problem -->
+        <section class="problem-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">The Challenge</span>
+                    <h2 class="section-title">Why Students Struggle With Math</h2>
+                    <p class="section-desc">Traditional classrooms often optimize for exam speeds rather than conceptual
+                        logic, leading to systemic barriers to entry.</p>
+                </div>
+
+                <div class="problem-grid">
+                    <div class="problem-card">
+                        <div class="problem-icon-wrapper red">
+                            <i class="ri-brain-line"></i>
+                        </div>
+                        <h3>Memorization Culture</h3>
+                        <p>Students are forced to memorize complex formulas without knowing how they work. When they
+                            forget the formula, they fail the question.</p>
+                    </div>
+
+                    <div class="problem-card">
+                        <div class="problem-icon-wrapper orange">
+                            <i class="ri-error-warning-line"></i>
+                        </div>
+                        <h3>Fear of Mistakes</h3>
+                        <p>The rigidity of grading formats builds mathematical anxiety, teaching children that math is
+                            an exclusive ability rather than a skill.</p>
+                    </div>
+
+                    <div class="problem-card">
+                        <div class="problem-icon-wrapper purple">
+                            <i class="ri-question-line"></i>
+                        </div>
+                        <h3>Poor Concept Delivery</h3>
+                        <p>Overcrowded lecture boards leave no room for students to pause, ask 'why', and build the
+                            foundational block before moving forward.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: EXACT SCREENSHOT SCREEN DESIGN (Why MathsTemple?) -->
+        <section class="screenshot-section" id="why-mathstemple">
+            <div class="screenshot-wrapper">
+                <!-- Left Column: Elegant Visual Collage -->
+                <div class="collage-container">
+                    <!-- Backplate Orange Accent circle -->
+                    <div class="backplate-accent"></div>
+
+                    <!-- Collage Shapes with Photos -->
+                    <!-- Top-Left shape (Indigo vertical capsule half) -->
+                    <div class="collage-shape shape-top-left">
+                        <img src="assets/img/1.png"
+                            alt="Student studying">
+                    </div>
+
+                    <!-- Middle-Left shape (Pink capsule rounded) -->
+                    <!-- <div class="collage-shape shape-mid-left">
+                        <img src="assets/img/2.png"
+                            alt="Student holding pink notebook">
+                    </div> -->
+
+                    <!-- Top-Right shape (Blue custom corner) -->
+                    <div class="collage-shape shape-top-right">
+                        <img src="assets/img/3.png"
+                            alt="Student smiling">
+                    </div>
+
+                    <!-- Center shape (Perfect Circle with light blue outline) -->
+                    <div class="collage-shape shape-center-circle">
+                        <img src="assets/img/4.png"
+                            alt="Student collaborating">
+                    </div>
+
+                    <!-- Right shape (Purple vertical rounded corner capsule) -->
+                    <div class="collage-shape shape-right-capsule">
+                        <img src="assets/img/5.png"
+                            alt="Student with tablet">
+                    </div>
+
+                    <!-- Bottom-Left shape (Blue quarter-circle / capsule arch) -->
+                    <div class="collage-shape shape-bottom-left">
+                        <img src="assets/img/6.png"
+                            alt="Student with notebook">
+                    </div>
+                </div>
+                <!-- Right Column: Content Box matches screenshot -->
+                <div class="screenshot-benefits">
+                    <h2 class="benefits-title">Why MathsTemple?</h2>
+
+                    <div class="benefits-card">
+                        <!-- Benefit 1 -->
+                        <div class="benefit-item">
+                            <div class="badge-icon badge-orange">
+                                <i class="ri-graduation-cap-line"></i>
+                            </div>
+                            <div class="benefit-text">
+                                <h3>Math explained in a way that makes sense</h3>
+                                <p>No more memorizing formulas you don't understand.</p>
+                            </div>
+                        </div>
+
+                        <!-- Benefit 2 -->
+                        <div class="benefit-item">
+                            <div class="badge-icon badge-purple">
+                                <i class="ri-graduation-cap-line"></i>
+                            </div>
+                            <div class="benefit-text">
+                                <h3>No more feeling left behind</h3>
+                                <p>Learn at your own pace, without pressure.</p>
+                            </div>
+                        </div>
+
+                        <!-- Benefit 3 -->
+                        <div class="benefit-item">
+                            <div class="badge-icon badge-pink">
+                                <i class="ri-graduation-cap-line"></i>
+                            </div>
+                            <div class="benefit-text">
+                                <h3>You won't just watch, you'll think</h3>
+                                <p>Pause during lessons and actually understand.</p>
+                            </div>
+                        </div>
+
+                        <!-- Benefit 4 -->
+                        <div class="benefit-item">
+                            <div class="badge-icon badge-blue">
+                                <i class="ri-graduation-cap-line"></i>
+                            </div>
+                            <div class="benefit-text">
+                                <h3>Stay engaged without getting tired</h3>
+                                <p>Short, interactive lessons that keep you going.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: How It Works -->
+        <section class="how-it-works">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">Our Method</span>
+                    <h2 class="section-title">Learning Built For Understanding</h2>
+                    <p class="section-desc">Our proven 3-step learning system builds long-term conceptual confidence.
+                    </p>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline-progress" id="timeline-progress"></div>
+
+                    <div class="timeline-step">
+                        <div class="step-num">1</div>
+                        <div class="step-card">
+                            <h3>Watch a Short Lesson</h3>
+                            <p>Engage with visually rich 10-minute videos. We teach the historical context and logical
+                                intuition of every formula before writing any math symbols down.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-step">
+                        <div class="step-num">2</div>
+                        <div class="step-card">
+                            <h3>Pause &amp; Think</h3>
+                            <p>Active learning beats passive watching. Interactive on-screen prompts stop the lesson to
+                                let you make connections and construct logic in real time.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-step">
+                        <div class="step-num">3</div>
+                        <div class="step-card">
+                            <h3>Master the Concept</h3>
+                            <p>Apply what you learned with smart practice questions. Our adaptive system identifies
+                                exact gaps in your logic and offers mini explanation blocks instantly.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Curriculum -->
+        <section class="curriculum-section" id="curriculum">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">Syllabus</span>
+                    <h2 class="section-title">Built Around Nigerian Curriculum</h2>
+                    <p class="section-desc">100% compliant with NERDC guidelines. Ready for your school terms, WAEC, and
+                        JAMB preparation.</p>
+                </div>
+
+                <!-- Material Style Tabs -->
+                <div class="tabs-container">
+                    <button class="tab-btn active" data-tab="ss1">SS 1</button>
+                    <button class="tab-btn" data-tab="ss2">SS 2</button>
+                    <button class="tab-btn" data-tab="ss3">SS 3</button>
+                </div>
+
+                <!-- Curriculum Grid panels -->
+                <div class="tab-panel active" id="ss1">
+                    <div class="curriculum-grid">
+                        <div class="curriculum-card">
+                            <span class="card-badge">SS1 Term 1</span>
+                            <h4>Number Base Systems</h4>
+                            <p>Binary, octal, and hexadecimal bases. Learn how computers use binary to talk.</p>
+                            <span class="card-lessons"><i class="ri-video-line"></i> 8 Lessons</span>
+                        </div>
+                        <div class="curriculum-card">
+                            <span class="card-badge">SS1 Term 2</span>
+                            <h4>Indices &amp; Logarithms</h4>
+                            <p>Power relationships, scientific notation, and logarithmic scales designed visually.</p>
+                            <span class="card-lessons"><i class="ri-video-line"></i> 12 Lessons</span>
+                        </div>
+                        <div class="curriculum-card">
+                            <span class="card-badge">SS1 Term 3</span>
+                            <h4>Sets &amp; Venn Diagrams</h4>
+                            <p>Learn logical groupings, set operations, and solve complex triple-circle diagram queries.
+                            </p>
+                            <span class="card-lessons"><i class="ri-video-line"></i> 6 Lessons</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-panel" id="ss2">
+                    <div class="curriculum-grid">
+                        <div class="curriculum-card">
+                            <span class="card-badge">SS2 Term 1</span>
+                            <h4>Trigonometry</h4>
+                            <p>Visualizing sine, cosine, tangent and unit circles without memorizing random tables.</p>
+                            <span class="card-lessons"><i class="ri-video-line"></i> 15 Lessons</span>
+                        </div>
+                        <div class="curriculum-card">
+                            <span class="card-badge">SS2 Term 2</span>
+                            <h4>Euclidean Geometry</h4>
+                            <p>Understand the underlying mechanics of circles, tangent theorems, and dynamic angles.</p>
+                            <span class="card-lessons"><i class="ri-video-line"></i> 14 Lessons</span>
+                        </div>
+                        <div class="curriculum-card">
+                            <span class="card-badge">SS2 Term 3</span>
+                            <h4>Statistics &amp; Data</h4>
+                            <p>Measures of central tendency, grouped frequencies, and reading statistical charts.</p>
+                            <span class="card-lessons"><i class="ri-video-line"></i> 9 Lessons</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-panel" id="ss3">
+                    <div class="curriculum-grid">
+                        <div class="curriculum-card">
+                            <span class="card-badge">SS3 Term 1</span>
+                            <h4>Intro to Calculus</h4>
+                            <p>Limits, rates of change, differentiation, and integration demystified through physics.
+                            </p>
+                            <span class="card-lessons"><i class="ri-video-line"></i> 18 Lessons</span>
+                        </div>
+                        <div class="curriculum-card">
+                            <span class="card-badge">SS3 Term 2</span>
+                            <h4>Probability &amp; Chance</h4>
+                            <p>Combinations, permutations, and independent probability events using real examples.</p>
+                            <span class="card-lessons"><i class="ri-video-line"></i> 10 Lessons</span>
+                        </div>
+                        <div class="curriculum-card">
+                            <span class="card-badge">SS3 Exam Prep</span>
+                            <h4>WAEC &amp; JAMB Revision</h4>
+                            <p>Interactive diagnostics of past questions, common exam traps, and smart scoring hacks.
+                            </p>
+                            <span class="card-lessons"><i class="ri-video-line"></i> 25 Lessons</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: Feature Showcase -->
+        <section class="features-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">Features</span>
+                    <h2 class="section-title">Designed For High Performance Learning</h2>
+                    <p class="section-desc">Experience modern, distraction-free educational engineering that actually
+                        works.</p>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-item-card">
+                        <i class="ri-lightbulb-flash-line"></i>
+                        <h4>Concept First Approach</h4>
+                        <p>Every lesson focuses on the physical explanation before writing mathematical notation,
+                            replacing rote memory with spatial understanding.</p>
+                    </div>
+                    <div class="feature-item-card">
+                        <i class="ri-time-line"></i>
+                        <h4>Bite-Sized 10-Min Lessons</h4>
+                        <p>Designed around modern attention spans. Fit lessons into short breaks, bus commutes, or quick
+                            study intervals easily.</p>
+                    </div>
+                    <div class="feature-item-card">
+                        <i class="ri-line-chart-line"></i>
+                        <h4>Smart Progress Tracking</h4>
+                        <p>Keep logs of completed topics, diagnostic accuracy scores, and receive custom syllabus study
+                            pathways dynamically.</p>
+                    </div>
+                    <div class="feature-item-card">
+                        <i class="ri-smartphone-line"></i>
+                        <h4>100% Mobile Friendly</h4>
+                        <p>Built with low-data payloads. Access lessons cleanly, even on slow network connections in any
+                            region.</p>
+                    </div>
+                    <div class="feature-item-card">
+                        <i class="ri-refresh-line"></i>
+                        <h4>Rewatch Anytime</h4>
+                        <p>No judgement, no rush. Pause, rewind, or slow down playback speed to ensure you master every
+                            equation.</p>
+                    </div>
+                    <div class="feature-item-card">
+                        <i class="ri-verified-badge-line"></i>
+                        <h4>Exam Standard Questions</h4>
+                        <p>Practice with interactive questions matched directly with official WAEC and JAMB exam
+                            metrics.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 7: Student Success Stories -->
+        <section class="stories-section" id="stories">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">Testimonials</span>
+                    <h2 class="section-title">What Our Students Say</h2>
+                    <p class="section-desc">Meet real Nigerian students who unlocked high scores and left math fear
+                        behind.</p>
+                </div>
+
+                <div class="stories-grid">
+                    <div class="story-card">
+                        <div class="story-header">
+                            <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&q=80&w=100"
+                                alt="Amara" class="story-avatar">
+                            <div>
+                                <h5>Amara Okafor</h5>
+                                <span>SS3 Student, Enugu</span>
+                            </div>
+                        </div>
+                        <p class="story-text">"I finally understood Trigonometry after years of confusion. MathsTemple
+                            took away the panic of staring at geometry boards. I got an A1 in my WAEC!"</p>
+                    </div>
+
+                    <div class="story-card">
+                        <div class="story-header">
+                            <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&q=80&w=100"
+                                alt="Tunde" class="story-avatar">
+                            <div>
+                                <h5>Tunde Balogun</h5>
+                                <span>SS2 Student, Lagos</span>
+                            </div>
+                        </div>
+                        <p class="story-text">"In class, the teacher moves fast and we just copy notes. On MathTemple, I
+                            can pause, think, and practice. I went from 42% in math to 78% this term!"</p>
+                    </div>
+
+                    <div class="story-card">
+                        <div class="story-header">
+                            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=100"
+                                alt="Chidi" class="story-avatar">
+                            <div>
+                                <h5>Chidi Nwachukwu</h5>
+                                <span>JAMB Candidate, Port Harcourt</span>
+                            </div>
+                        </div>
+                        <p class="story-text">"Calculus used to feel like a foreign language. The 10-minute visual
+                            lessons break complex steps down into simple concepts. Absolutely recommend this to
+                            everyone."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 8: Impact Numbers -->
+        <section class="impact-section">
+            <div class="section-container">
+                <div class="impact-grid" id="counters-section">
+                    <div class="impact-item">
+                        <h3 class="counter-num" data-target="15">0</h3>
+                        <p>Core Math Topics</p>
+                    </div>
+                    <div class="impact-item">
+                        <h3 class="counter-num" data-target="300">0</h3>
+                        <p>Micro Video Lessons</p>
+                    </div>
+                    <div class="impact-item">
+                        <h3 class="counter-num" data-target="1000">0</h3>
+                        <p>Students Empowered</p>
+                    </div>
+                    <div class="impact-item">
+                        <h3 class="counter-num" data-target="95">0</h3>
+                        <p>Completion Rate (%)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 9: FAQ -->
+        <section class="faq-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">FAQ</span>
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <p class="section-desc">Got questions about MathTemple? We've got answers.</p>
+                </div>
+
+                <div class="faq-accordion-container">
+                    <div class="faq-item">
+                        <button class="faq-trigger">
+                            <span>Is MathTemple free?</span>
+                            <i class="ri-add-line"></i>
+                        </button>
+                        <div class="faq-content">
+                            <p>Yes! Our foundational tracks and selected sample lessons are entirely free. We also offer
+                                premium packages with advanced past-question solutions and curriculum prep.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-trigger">
+                            <span>Is it aligned to WAEC and JAMB?</span>
+                            <i class="ri-add-line"></i>
+                        </button>
+                        <div class="faq-content">
+                            <p>Absolutely. Our educational content map is completely aligned with the Nigerian NERDC
+                                secondary syllabus and targets official test structures for both WAEC and JAMB exams.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-trigger">
+                            <span>Can I use it on my mobile phone?</span>
+                            <i class="ri-add-line"></i>
+                        </button>
+                        <div class="faq-content">
+                            <p>Yes, MathTemple is designed to be fully mobile-responsive. It is coded to work on
+                                standard mobile devices, consuming minimal data payloads for fast loading on any network
+                                speed.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-trigger">
+                            <span>How long are the lessons?</span>
+                            <i class="ri-add-line"></i>
+                        </button>
+                        <div class="faq-content">
+                            <p>Most lessons are about 10 minutes long. This layout is engineered to fit into active
+                                cognitive rest schedules and prevent mental exhaustion while keeping retention high.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 10: Final CTA -->
+        <section class="cta-section" id="start">
+            <div class="cta-container">
+                <div class="cta-content">
+                    <h2>Start Understanding Math Today.</h2>
+                    <p>One single lesson can change how you think about math forever.</p>
+                    <a href="#register" class="btn btn-primary btn-white">Start Learning Free</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <svg class="logo-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 26V9.5C4 7 8 5 16 13C24 5 28 7 28 9.5V26H4Z" stroke="currentColor" stroke-width="3"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <span class="logo-text">Maths<span>Temple</span></span>
+                </div>
+                <p class="brand-subtext">Building the next generation of logical, confident Nigerian problem solvers.
+                </p>
+            </div>
+
+            <div class="footer-column">
+                <h5>Product</h5>
+                <a href="#home">Home</a>
+                <a href="#curriculum">Curriculum</a>
+                <a href="#lessons">Lessons</a>
+            </div>
+
+            <div class="footer-column">
+                <h5>Resources</h5>
+                <a href="#waec">WAEC Prep</a>
+                <a href="#jamb">JAMB Prep</a>
+                <a href="#tips">Study Tips</a>
+            </div>
+
+            <div class="footer-column">
+                <h5>Company</h5>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <div class="footer-column">
+                <h5>Legal</h5>
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 MathTemple. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
